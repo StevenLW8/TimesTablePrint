@@ -15,19 +15,31 @@ public class TimesTablePrint {
 		System.out.println("What is the smallest number that you want?");
 		low=in.nextInt();
 		//Print the times table
-		for(int low1=low;low1<high;low1++) {
-			System.out.println("\n"+low1);
+		num=low;
+		
+		int b=low;
+	
+		for (int x=low;x<=high;x++) {
+
+
+			System.out.print("\t"+x);
 
 		}
-		while (low<=high) {
+	
+		for (int y=low;y<=high;y++)  {
+			System.out.println();
 
+			System.out.print(y);
 
-			System.out.print("\t"+low);
-
-			low+=1;
+		
+			for (int a=low;a<=high;a++) {
+				System.out.print("\t"+a*y);
+		
 			}
 			
-
 		}
 
+
 	}
+
+}
