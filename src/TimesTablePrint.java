@@ -39,7 +39,7 @@ public class TimesTablePrint {
 			
 		}
 
-
+		in.close();
 	}
 
 }
